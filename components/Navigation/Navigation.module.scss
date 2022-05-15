@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.nav {
+  &Link {
+    &Active {
+      font-weight: 500;
+      &:hover {
+        color: $white;
+      }
+    }
+    &:hover {
+      color: $light-green;
+    }
+  }
+
+}
