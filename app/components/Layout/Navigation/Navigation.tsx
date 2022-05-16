@@ -1,7 +1,7 @@
 import {NavigationProps} from "./Navigation.props";
 import Link from "next/link";
 import styles from "./Navigation.module.scss";
-import {NAVIGATION_LIST} from "../../utils/constans";
+import {NAVIGATION_LIST} from "../../../utils/constans";
 import {useRouter} from "next/router";
 
 export const Navigation = ({ className, ...props }: NavigationProps) => {

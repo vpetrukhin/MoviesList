@@ -1,0 +1,23 @@
+.header {
+  max-width: 1160px;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: white;
+  &Logo {
+    margin-right: auto;
+  }
+  &Buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+}
+
+@media screen and (max-width: 1160px) {
+  .header {
+    width: 95%;
+  }
+}
