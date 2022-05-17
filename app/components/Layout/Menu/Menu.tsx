@@ -6,15 +6,10 @@ import styles from "./Menu.module.scss";
 
 export const Menu = ({className, ...props}: MenuProps) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const { pathname } = useRouter();
 
     useEffect(() => {
         setIsOpen(!(document.documentElement.offsetWidth < 768))
     }, []);
-
-    useEffect(() => {
-        setIsOpen(!isOpen);
-    }, [pathname])
 
     const handleClick = () => {
       setIsOpen(!isOpen);

@@ -1,5 +1,19 @@
 .layout {
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
   padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  &Header {
+    width: 95%;
+  }
+  &Main {
+    width: 95%;
+    margin: 0 auto;
+    flex: 1 0 auto;
+  }
+  &Footer {
+    flex: 0 0 auto;
+  }
 }
