@@ -1,5 +1,5 @@
 .header {
-  max-width: 1160px;
+  //max-width: 1160px;
   margin: 0 auto 18px;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
 
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1200px) {
   .header {
     width: 95%;
   }
