@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import {useRouter} from 'next/router';
 import {Navigation, Button} from "../../index";
 import {MenuProps} from "./Menu.props";
 import styles from "./Menu.module.scss";
@@ -8,7 +7,7 @@ export const Menu = ({className, ...props}: MenuProps) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     useEffect(() => {
-        setIsOpen(!(document.documentElement.offsetWidth < 768))
+        setIsOpen(document.documentElement.offsetWidth < 768)
     }, []);
 
     const handleClick = () => {

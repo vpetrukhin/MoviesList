@@ -9,6 +9,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+#__next {
+  height: 100%;
+}
+
 body {
   background-color: $main-bg;
   font-family: 'Inter', sans-serif;
