@@ -8,7 +8,7 @@ export const Navigation = ({ className, ...props }: NavigationProps) => {
     const { pathname } = useRouter();
 
     return (
-        <nav className={styles.nav} {...props} >
+        <nav className={`${styles.nav} ${className}`} {...props} >
             {NAVIGATION_LIST.map(({ id, href, title }) => (
                 <Link href={href} key={id}>
                     <a className={`${styles.navLink} ${pathname === href ? styles.navLinkActive : null}`}>{title}</a>
