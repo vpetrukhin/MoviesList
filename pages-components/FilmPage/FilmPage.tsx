@@ -1,5 +1,11 @@
+import Head from "next/head";
+
 export const FilmPage = () => {
     return (
-        <>film</>
+        <>
+            <Head>
+                <title>Movies List | Film</title>
+            </Head>
+        </>
     )
 }
